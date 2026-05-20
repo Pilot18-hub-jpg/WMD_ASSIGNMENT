@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width,initial-scale=1.0">
+    <title>Coconut Lounge Lifestyle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav>
+    <a href="index.html" class="logo">
+        <img src="images/logo.png.jpg" alt="Coconut Lounge Logo">
+    </a>
+    
+    <ul class="desktop-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+    <ul>
+        <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+        <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+        <li><a href="services.html" onclick="toggleMenu()">Services</a></li>
+        <li><a href="events.html" onclick="toggleMenu()">Events</a></li>
+        <li><a href="menu.html" onclick="toggleMenu()">Menu</a></li>
+        <li><a href="gallery.html" onclick="toggleMenu()">Gallery</a></li>
+        <li><a href="feedback.html" onclick="toggleMenu()">Feedback</a></li>
+    </ul>
+</div>
+    <main>
+        <section class="hero fade-in">
+            <h1>Welcome to Coconut Lounge Lifestyle</h1>
+            <p>Experience the best nightlife and relaxation in Francistown.</p>
+            <h2>Featured Events</h2>
+            <p>Join us for amazing nights filled with music, drinks and good vibes.</p>
+            <a href="tickets.html" class="btn btn-primary">Get Tickets</a>
+        </section>
+        <section>
+            <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+                <span class="section-label">OUR STORY</span>
+                <h2>Born from Passion for Excellence</h2>
+                <p style="font-size: 1.1rem; color: #ccc;">
+                    Coconut Lounge Lifestyle was created to bring world-class nightlife and luxury experiences to Francistown.A place where great music, premium drinks and warm Batswana hospitality come together.
+                </p>
+                <a href="about.html" style="color: limegreen; text-decoration: underline; margin-top: 20px; display: inline-block;">
+                    Read Our Full Story →
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+       <div class="footer-container">
+          <div class="footer-box">
+              <h3>Coconut Lounge</h3>
+              <p>Francistown</p>
+              <p>Botswana</p>
+          </div>
+
+          <div class="footer-box">
+              <h3>Opening Hours</h3>
+              <p>Monday - Thursday: 5:00 PM - 12:00 AM<br> Friday - Saturday: 5:00 PM - 2:00 AM<br> Sunday: 4:00 PM - 11:00 PM</p>
+          </div>
+
+          <div class="footer-box">
+             <h3>Contact</h3>
+             <p>+267 240 0001</p>
+             <P>ftownlounge@gmail.com</P>
+          </div>
+
+           <div class="footer-box">
+              <h3>Follow</h3>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+           </div>
+                  
+           <div class="footer-bottom">
+              <p>&copy; 2026 Coconut Lounge Lifestyle. All rights reserved.</p>
+           </div>
+       </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

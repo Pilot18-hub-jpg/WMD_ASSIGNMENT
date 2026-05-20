@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Coconut Lounge Lifestyle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav>
+    <a href="index.html" class="logo">
+        <img src="images/logo.png.jpg" alt="Coconut Lounge Logo">
+    </a>
+    
+    <ul class="desktop-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+    <ul>
+        <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+        <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+        <li><a href="services.html" onclick="toggleMenu()">Services</a></li>
+        <li><a href="events.html" onclick="toggleMenu()">Events</a></li>
+        <li><a href="menu.html" onclick="toggleMenu()">Menu</a></li>
+        <li><a href="gallery.html" onclick="toggleMenu()">Gallery</a></li>
+        <li><a href="feedback.html" onclick="toggleMenu()">Feedback</a></li>
+    </ul>
+</div>
+
+    <div class="about-hero" style="height: 15vh;">
+        <span class="section-label">PREMIUM EXPERIENCES</span>
+        <h1>Our <span>Services</span></h1>
+        <p>Elevating every moment at Coconut Lounge</p>
+    </div>
+    <main>
+        <section style="max-width: 1200px; margin: 0 auto;">
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; padding: 0 5%;"> 
+                
+                <div class="card">
+                    <h2>🍸 Premium Bar & Cocktails</h2>
+                    <p>Signature cocktails crafted by professional mixologists using premium spirits. Extensive wine list and spirits selection for every taste.</p>
+                    <strong style="color: limegreen;">Signature Drinks • Bottle Service • VIP Bar</strong>
+                </div>
+
+                <div class="card">
+                    <h2>🎵 Live Entertainment</h2>
+                    <p>Weekly live DJ performances, themed nights, Amapiano, Afrobeats, and special guest appearances. The best sound system and lighting in Francistown.</p>
+                    <strong style="color: limegreen;">DJ Nights • Themed Events • Live Music</strong>
+                </div>
+
+                <div class="card">
+                    <h2>🍽️ Fine Dining</h2>
+                    <p>Delicious fusion menu featuring local favorites and international dishes. Perfect for dinner dates or group meals.</p>
+                    <strong style="color: limegreen;">À la carte • Sharing Platters • Late Night Bites</strong>
+                </div>
+
+                <div class="card">
+                    <h2>🎉 Private Events & VIP</h2>
+                    <p>Host your birthday, corporate function, anniversary or any special celebration in our exclusive VIP area or full venue booking.</p>
+                    <strong style="color: limegreen;">Private Bookings • VIP Tables • Full Venue Hire</strong>
+                </div>
+
+                <div class="card">
+                    <h2>🚬 Hookah Lounge</h2>
+                    <p>Premium hookah experience with a wide variety of flavors in a relaxed, luxurious setting.</p>
+                    <strong style="color: limegreen;">Multiple Flavors • VIP Hookah Packages</strong>
+                </div>
+            </div>
+        </section>
+
+        <section style="background: #111; margin-top: 40px;">
+            <div style="text-align: center; max-width: 900px; margin: 0 auto; padding: 80px 10%;">
+                <h2>Why Guests Love Coconut Lounge</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-top: 50px;">
+                    <div>
+                        <h3 style="color: limegreen;">01</h3>
+                        <p><strong>World-Class Experience</strong><br>Right here in Francistown</p>
+                    </div>
+                    <div>
+                        <h3 style="color: limegreen;">02</h3>
+                        <p><strong>Personalised Service</strong><br>Warm Batswana hospitality</p>
+                    </div>
+                    <div>
+                        <h3 style="color: limegreen;">03</h3>
+                        <p><strong>Memorable Nights</strong><br>Every single visit</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="cta-banner">
+        <h2>Ready to Experience Premium Hospitality?</h2>
+        <p>Book your table or private event today</p>
+        <button class="reserve-btn" onclick="reserveTable()">Reserve Your Table</button>
+    </div>
+
+   <footer>
+       <div class="footer-container">
+          <div class="footer-box">
+             <h3>Coconut Lounge</h3>
+             <p>Francistown</p>
+             <p>Botswana</p>
+          </div>
+
+          <div class="footer-box">
+              <h3>Opening Hours</h3>
+              <p>Monday - Thursday: 5:00 PM - 12:00 AM<br> Friday - Saturday: 5:00 PM - 2:00 AM<br> Sunday: 4:00 PM - 11:00 PM</p>
+          </div>
+
+          <div class="footer-box">
+             <h3>Contact</h3>
+             <p>+267 240 0001</p>
+             <P>ftownlounge@gmail.com</P>
+          </div>
+
+           <div class="footer-box">
+              <h3>Follow</h3>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+           </div>
+                  
+           <div class="footer-bottom">
+              <p>&copy; 2026 Coconut Lounge Lifestyle. All rights reserved.</p>
+           </div>
+       </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Coconut Lounge Lifestyle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav>
+    <a href="index.html" class="logo">
+        <img src="images/logo.png.jpg" alt="Coconut Lounge Logo">
+    </a>
+    
+    <ul class="desktop-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+    <ul>
+        <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+        <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+        <li><a href="services.html" onclick="toggleMenu()">Services</a></li>
+        <li><a href="events.html" onclick="toggleMenu()">Events</a></li>
+        <li><a href="menu.html" onclick="toggleMenu()">Menu</a></li>
+        <li><a href="gallery.html" onclick="toggleMenu()">Gallery</a></li>
+        <li><a href="feedback.html" onclick="toggleMenu()">Feedback</a></li>
+    </ul>
+</div>
+
+    <div class="about-hero" style="height: 15vh;">
+        <span class="section-label">SECURE BOOKING</span>
+        <h1>Get Your <span>Tickets</span></h1>
+        <p>Book now for the best nights at Coconut Lounge</p>
+    </div>
+
+    <main>
+        <section style="max-width: 1100px; margin: 0 auto; padding: 60px 5%;">
+            
+            <div style="background: #111; padding: 50px; border-radius: 20px;">
+                <h2 style="text-align: center; margin-bottom: 40px;">Event Ticket Booking</h2>
+                
+                <form id="ticketForm">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px;">
+                        
+                        <div>
+                            <label>Full Name</label>
+                            <input type="text" required placeholder="Your full name">
+                        </div>
+                        
+                        <div>
+                            <label>Email Address</label>
+                            <input type="email" required placeholder="your@email.com">
+                        </div>
+                        
+                        <div>
+                            <label>Select Event</label>
+                            <select required>
+                                <option value="">Choose an event</option>
+                                <option>Amapiano Nights - 20 May 2026</option>
+                                <option>Live DJ Experience - 25 May 2026</option>
+                                <option>Weekend Vibes - 30 May 2026</option>
+                                <option>Afrobeats & Cocktails - 07 June 2026</option>
+                                <option>Ladies Night Golden Edition - 21 June 2026</option>
+                                <option>Corporate Sunset Mixer - 28 June 2026</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label>Number of Tickets</label>
+                            <input type="number" min="1" max="10" value="1" required>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 30px;">
+                        <label>Payment Method</label><br><br>
+                        <label><input type="radio" name="payment" required> Mobile Money (Orange / MyZaka)</label><br><br>
+                        <label><input type="radio" name="payment"> Bank Transfer</label><br><br>
+                        <label><input type="radio" name="payment"> Credit / Debit Card</label>
+                    </div>
+
+                    <div style="margin-top: 30px;">
+                        <label>Ticket Delivery</label><br><br>
+                        <label><input type="radio" name="delivery" checked> Email E-Ticket (Recommended)</label><br><br>
+                        <label><input type="radio" name="delivery"> Collect at Entrance</label>
+                    </div>
+
+                    <button type="submit" style="width: 100%; margin-top: 40px; padding: 18px; font-size: 1.1rem;">
+                        Complete Booking - Pay Now
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <section style="background: #0a0a0a; padding: 60px 5%; text-align: center;">
+            <h2>Important Information</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; max-width: 1000px; margin: 40px auto;">
+                <div class="card">
+                    <p><strong>ID Required</strong><br>Bring valid ID on the day of the event</p>
+                </div>
+                <div class="card">
+                    <p><strong>No Refunds</strong><br>Tickets are non-refundable but transferable</p>
+                </div>
+                <div class="card">
+                    <p><strong>Door Policy</strong><br>Management reserves the right of admission</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="cta-banner">
+        <h2>Questions about tickets?</h2>
+        <p>Call us or send a message</p>
+    </div>
+
+    <footer>
+       <div class="footer-container">
+          <div class="footer-box">
+             <h3>Coconut Lounge</h3>
+             <p>Francistown</p>
+             <p>Botswana</p>
+          </div>
+
+          <div class="footer-box">
+              <h3>Opening Hours</h3>
+              <p>Monday - Thursday: 5:00 PM - 12:00 AM<br> Friday - Saturday: 5:00 PM - 2:00 AM<br> Sunday: 4:00 PM - 11:00 PM</p>
+          </div>
+
+          <div class="footer-box">
+             <h3>Contact</h3>
+             <p>+267 240 0001</p>
+             <P>ftownlounge@gmail.com</P>
+          </div>
+
+           <div class="footer-box">
+              <h3>Follow</h3>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+           </div>
+                  
+           <div class="footer-bottom">
+              <p>&copy; 2026 Coconut Lounge Lifestyle. All rights reserved.</p>
+           </div>
+       </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById("ticketForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+            alert("🎟️ Thank you! Your ticket booking has been received.\n\nWe will send confirmation to your email shortly.");
+            this.reset();
+        });
+    </script>
+</body>
+</html>

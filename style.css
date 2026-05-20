@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #0a0a0a;
+    color: #f0f0f0;
+    line-height: 1.7;
+}
+
+/* Navigation */
+nav {
+    background: rgba(10, 10, 10, 0.98);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(0, 255, 0, 0.2);
+}
+
+nav .logo img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 3px solid limegreen;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: limegreen;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: white;
+}
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: #0a0a0a;
+    padding: 20px;
+    border-top: 1px solid limegreen;
+    z-index: 999;
+}
+
+.mobile-menu ul {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+/* Hero & Sections */
+.hero, .about-hero {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 5%;
+}
+
+.hero h1, .about-hero h1 {
+    font-size: 4.2rem;
+    color: limegreen;
+}
+
+.section-label {
+    color: limegreen;
+    letter-spacing: 4px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+section {
+    padding: 100px 5%;
+}
+
+.gold-line {
+    width: 90px;
+    height: 4px;
+    background: limegreen;
+    margin: 20px auto;
+}
+
+/* Cards & Buttons */
+.card, .about-card, .event-card, .award-card, .menu-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(0, 255, 0, 0.15);
+    border-radius: 16px;
+    padding: 2rem;
+    transition: all 0.4s ease;
+}
+
+.card:hover, .about-card:hover, .event-card:hover, .award-card:hover, .menu-card:hover {
+    transform: translateY(-15px);
+    border-color: limegreen;
+}
+
+button, .btn, .reserve-btn {
+    background: limegreen;
+    color: black;
+    border: none;
+    padding: 14px 32px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover, .reserve-btn:hover {
+    background: #00cc00;
+    transform: scale(1.08);
+}
+
+/*GALLERY*/
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+.gallery img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: #050505;
+    margin-top: 50px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+.footer-box h3 {
+    color: limegreen;
+    margin-bottom: 10px;
+}
+.footer-box p {
+    margin: 5px 0;
+}
+.footer-box a {
+    color: white;
+    margin-right: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid rgba(0, 255, 0, 0.2);
+    clear: both;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    nav ul {
+        display: none;
+    }
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+}

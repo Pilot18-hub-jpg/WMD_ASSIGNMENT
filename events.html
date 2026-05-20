@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width,initial-scale=1.0">
+    <title>Coconut Lounge Lifestyle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+   <nav>
+    <a href="index.html" class="logo">
+        <img src="images/logo.png.jpg" alt="Coconut Lounge Logo">
+    </a>
+    
+    <ul class="desktop-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+    <ul>
+        <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+        <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+        <li><a href="services.html" onclick="toggleMenu()">Services</a></li>
+        <li><a href="events.html" onclick="toggleMenu()">Events</a></li>
+        <li><a href="menu.html" onclick="toggleMenu()">Menu</a></li>
+        <li><a href="gallery.html" onclick="toggleMenu()">Gallery</a></li>
+        <li><a href="feedback.html" onclick="toggleMenu()">Feedback</a></li>
+    </ul>
+</div>
+
+    <div class="about-hero" style="height: 15vh; background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.85)), url('images/events-bg.jpg') center/cover;">
+        <span class="section-label">EXCLUSIVE EXPERIENCE</span>
+        <h1>Upcoming <span>Events</span></h1>
+        <p>Join us for unforgettable nights in Francistown</p>
+    </div>
+
+    <main>
+        <section>
+            <div style="text-align: center; margin-bottom: 60px;">
+                <span class="section-label">MAY & JUNE 2026</span>
+                <h2>Don't Miss These Nights</h2>
+            </div>
+
+            <div class="event-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 30px; max-width: 1300px; margin: 0 auto;">
+                
+                <div class="event-card card">
+                    <h3>Amapiano Nights</h3>
+                    <p><strong>Date:</strong> 20 May 2026</p>
+                    <p><strong>Time:</strong> 8:00 PM</p>
+                    <p><strong>Entry:</strong> P100</p>
+                    <a href="tickets.html" class="btn btn-primary">Get Tickets</a>
+                </div>
+
+                <div class="event-card card">
+                    <h3>Live DJ Experience</h3>
+                    <p><strong>Date:</strong> 25 May 2026</p>
+                    <p><strong>Time:</strong> 9:00 PM</p>
+                    <p><strong>Entry:</strong> P150</p>
+                    <a href="tickets.html" class="btn btn-primary">Get Tickets</a>
+                </div>
+
+                <div class="event-card card">
+                    <h3>Weekend Vibes</h3>
+                    <p><strong>Date:</strong> 30 May 2026</p>
+                    <p><strong>Time:</strong> 7:00 PM</p>
+                    <p><strong>Entry:</strong> P120</p>
+                    <a href="tickets.html" class="btn btn-primary">Get Tickets</a>
+                </div>
+
+                <div class="event-card card">
+                    <h3>Afrobeats & Cocktails Night</h3>
+                    <p><strong>Date:</strong> 07 June 2026</p>
+                    <p><strong>Time:</strong> 8:00 PM</p>
+                    <p><strong>Entry:</strong> P100</p>
+                    <a href="tickets.html" class="btn btn-primary">Get Tickets</a>
+                </div>
+
+                <div class="event-card card">
+                    <h3>Ladies' Night - Golden Edition</h3>
+                    <p><strong>Date:</strong> 21 June 2026</p>
+                    <p><strong>Time:</strong> 7:00 PM</p>
+                    <p><strong>Entry:</strong> P70 (Ladies)</p>
+                    <a href="tickets.html" class="btn btn-primary">Get Tickets</a>
+                </div>
+
+                <div class="event-card card">
+                    <h3>Corporate Sunset Mixer</h3>
+                    <p><strong>Date:</strong> 28 June 2026</p>
+                    <p><strong>Time:</strong> 6:00 PM</p>
+                    <p><strong>Entry:</strong> P50</p>
+                    <a href="tickets.html" class="btn btn-primary">Get Tickets</a>
+                </div>
+            </div>
+        </section>
+
+        <section style="background: #111; text-align: center; padding: 80px 5%;">
+            <h2 style="color: limegreen;">Private Events & Bookings</h2>
+            <p style="font-size: 1.2rem; max-width: 700px; margin: 20px auto;">
+                Want to host your birthday, corporate event, or special celebration? 
+                We offer exclusive private bookings and VIP packages.
+            </p>
+        </section>
+    </main>
+
+    <div class="cta-banner">
+        <h2>Be Part of the Experience</h2>
+        <p>Book your tickets early — these nights get packed!</p>
+        <a href="tickets.html" class="btn btn-primary">Get Tickets</a>
+    </div>
+    
+    <footer>
+       <div class="footer-container">
+          <div class="footer-box">
+             <h3>Coconut Lounge</h3>
+             <p>Francistown</p>
+             <p>Botswana</p>
+          </div>
+
+          <div class="footer-box">
+              <h3>Opening Hours</h3>
+              <p>Monday - Thursday: 5:00 PM - 12:00 AM<br> Friday - Saturday: 5:00 PM - 2:00 AM<br> Sunday: 4:00 PM - 11:00 PM</p>
+          </div>
+
+          <div class="footer-box">
+             <h3>Contact</h3>
+             <p>+267 240 0001</p>
+             <P>ftownlounge@gmail.com</P>
+          </div>
+
+           <div class="footer-box">
+            <h3>Follow</h3>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+       </div>
+                  
+        <div class="footer-bottom">
+            <p>&copy; 2026 Coconut Lounge Lifestyle. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

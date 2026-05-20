@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Coconut Lounge Lifestyle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+   <nav>
+    <a href="index.html" class="logo">
+        <img src="images/logo.png.jpg" alt="Coconut Lounge Logo">
+    </a>
+    
+    <ul class="desktop-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+    <ul>
+        <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+        <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+        <li><a href="services.html" onclick="toggleMenu()">Services</a></li>
+        <li><a href="events.html" onclick="toggleMenu()">Events</a></li>
+        <li><a href="menu.html" onclick="toggleMenu()">Menu</a></li>
+        <li><a href="gallery.html" onclick="toggleMenu()">Gallery</a></li>
+        <li><a href="feedback.html" onclick="toggleMenu()">Feedback</a></li>
+    </ul>
+</div>
+
+    <div class="about-hero" style="height: 15vh;">
+        <span class="section-label">YOUR OPINION MATTERS</span>
+        <h1>Share Your <span>Feedback</span></h1>
+        <p>Help us serve you better</p>
+    </div>
+
+    <main>
+        <section style="max-width: 800px; margin: 0 auto; padding: 60px 5%;">
+            
+            <div style="background: #111; padding: 50px; border-radius: 20px;">
+                <h2 style="text-align: center; margin-bottom: 40px;">Tell Us About Your Experience</h2>
+                
+                <form id="feedbackForm">
+                    <label>Full Name</label>
+                    <input type="text" name="name" required placeholder="Your full name">
+                    
+                    <label>Email Address</label>
+                    <input type="email" name="email" required placeholder="your@email.com">
+                    
+                    <label>Rate Your Experience</label>
+                    <select name="rating" required>
+                        <option value="">Select Rating</option>
+                        <option value="Excellent">Excellent - 5 Stars</option>
+                        <option value="Very Good">Very Good - 4 Stars</option>
+                        <option value="Good">Good - 3 Stars</option>
+                        <option value="Average">Average - 2 Stars</option>
+                        <option value="Poor">Poor - 1 Star</option>
+                    </select>
+                    
+                    <label>Your Feedback / Message</label>
+                    <textarea name="message" rows="8" required placeholder="Tell us about your visit, what you loved, and how we can improve..."></textarea>
+                    
+                    <button type="submit" style="width: 100%; padding: 16px; font-size: 1.1rem; margin-top: 20px;">
+                        Submit Feedback
+                    </button>
+              </form>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px; color: #aaa;">
+                <p>Thank you for helping us improve! ❤️</p>
+                <p>Your feedback is greatly appreciated and will be reviewed by our management team.</p>
+            </div>
+        </section>
+    </main>
+
+    <div class="cta-banner">
+        <h2>Thank You for Visiting Us</h2>
+        <p>We look forward to welcoming you back soon</p>
+        <button class="reserve-btn" onclick="reserveTable()">Reserve Your Next Table</button>
+    </div>
+
+    <footer>
+       <div class="footer-container">
+          <div class="footer-box">
+             <h3>Coconut Lounge</h3>
+             <p>Francistown</p>
+             <p>Botswana</p>
+          </div>
+
+          <div class="footer-box">
+              <h3>Opening Hours</h3>
+              <p>Monday - Thursday: 5:00 PM - 12:00 AM<br> Friday - Saturday: 5:00 PM - 2:00 AM<br> Sunday: 4:00 PM - 11:00 PM</p>
+          </div>
+
+          <div class="footer-box">
+             <h3>Contact</h3>
+             <p>+267 240 0001</p>
+             <P>ftownlounge@gmail.com</P>
+          </div>
+
+           <div class="footer-box">
+              <h3>Follow</h3>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+           </div>
+       </div>
+                  
+        <div class="footer-bottom">
+            <p>&copy; 2026 Coconut Lounge Lifestyle. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+       document.getElementById("feedbackForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+            alert("✅ Thank you for your feedback!\n\nWe truly appreciate you taking the time to share your experience.");
+            this.reset();
+        });
+    </script>
+</body>
+</html>

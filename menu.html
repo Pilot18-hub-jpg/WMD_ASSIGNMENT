@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width,initial-scale=1.0">
+    <title>Coconut Lounge Lifestyle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudlare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+   <nav>
+      <a href="index.html" class="logo">
+        <img src="images/logo.png.jpg" alt="Coconut Lounge Logo">
+      </a>
+    
+      <ul class="desktop-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+       </ul>
+
+       <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </nav>
+
+    <!-- Mobile Menu --> 
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+          <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+          <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+          <li><a href="services.html" onclick="toggleMenu()">Services</a></li>
+          <li><a href="events.html" onclick="toggleMenu()">Events</a></li>
+          <li><a href="menu.html" onclick="toggleMenu()">Menu</a></li>
+          <li><a href="gallery.html" onclick="toggleMenu()">Gallery</a></li>
+          <li><a href="feedback.html" onclick="toggleMenu()">Feedback</a></li>
+       </ul>
+   </div>
+
+    <div class="about-hero" style="height: 20vh;">
+        <span class="section-label">PREMIUM EXPERIENCE</span>
+        <h1>Our <span>Menu</span></h1>
+        <p>Signature Cocktails • Fine Dining • Hookah </p>
+    </div>
+
+    <main>
+       <div class="menu-nav" style="text-align: center; padding: 30px 5%; background: #111;">
+          <a href="#cocktails">Cocktails</a>
+          <a href="#mocktails">Mocktails</a>
+          <a href="#wine">Wine</a>
+          <a href="#food">Food</a>
+          <a href="#hookah">Hookah</a>
+    </div>
+
+    <section id="cocktails">
+        <h2>Cocktails</h2>
+        <div class="menu-cards" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px;">
+            <div class="menu-card">
+                <h3>Coconut Sunset</h3>
+                <p>Coconut rum, mango puree, grenadine, lime juice, sparkling water</p>
+                <button onclick="orderItem('Çoconut Sunset')">BWP 75 - Order</button>
+            </div>
+            <div class="menu-card">
+                <h3>Black Diamond</h3>
+                <p>Whiskey, charcoal syrup, bitters, smoked orange</p>
+                <button onclick="orderItem('Black Diamond')">BWP 95 - Order</button>
+            </div>
+            <div class="menu-card">
+                <h3>Francistown Fizz</h3>
+                <p>Gin, elderflower, cucumber, mint, tonic</p>
+                <button onclick="orderItem('Francistown Fizz')">BWP 80 - Order</button>
+            </div>
+            <div class="menu-card">
+                <h3>Gold Margarita</h3>
+                <p>Premium tequila, lime, agave, gold salt rim</p>
+                <button onclick="orderItem('Gold Margarita')">BWP 90 - Order</button>
+            </div>
+            <div class="menu-card">
+                <h3>Lychee Martini</h3>
+                <p>Vodka, lychee, rose water, prosecco</p>
+                <button onclick="orderItem('Lychee Martini')">BWP 88 - Order</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="mocktails" style="background: #111;">
+        <h2>Mocktails</h2>
+        <div class="menu-cards"  style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px;">
+            <div class="menu-card">
+                <h3>Virgin Coconut Bliss</h3>
+                <p>Coconut water, pineapple, lime, mint</p>
+                <button onclick="orderItem('Virgin Coconut Bliss')">BWP 45 - Order</button>
+            </div>
+            <div class="menu-card">
+                <h3>Sunrise Splash</h3>
+                <p>Orange juice, grenadine, passion fruit</p>
+                <button onclick="orderItem('Sunrise Splash')">BWP 40 - Order</button>
+            </div>
+            <div class="menu-card">
+                <h3>Berry Lemonade</h3>
+                <p>Mixed berries, lemonade, basil</p>
+                <button onclick="orderItem('Berry Lemonade')">BWP 38 - Order</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="wine">
+        <h2>Wine & Spirits</h2>
+        <div class="menu-cards"  style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px;">
+            <div class="menu-card">
+                <h3>Moet & Chandon</h3>
+                <p>Champagne (Bottle)</p>
+                <button onclick="orderItem('Moet & Chandon')">BWP 1800 - Order</button>
+            </div>
+            <div class="menu-card">
+                <h3>Johnnie Walker Black</h3>
+                <p>Scotch Whisky (750ml)</p>
+                <button onclick="orderItem('Johnnie Walker Black')">BWP 950 - Order</button>
+            </div>
+            <div class="menu-card">
+                <h3>Hendrick Gin</h3>
+                <p>Cucumber & rose gin</p>
+                <button onclick="orderItem('Hendric Gin')">BWP 880 - Order</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="food" style="background: #111;">
+        <h2>Food</h2>
+        <div class="menu-cards"  style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px;">
+            <div class="menu-card">
+                <h3>Coconut Prawn Skewers</h3>
+                <button onclick="orderItem('Coconut Prawn Skewers')">BWP 145 - Order</button>
+            </div>
+            <div class="menu-card">
+                <h3>Seswaa Sliders</h3>
+                <p>Traditional pulled beef mini burgers</p>
+                <button onclick="orderItem('Seswaa Sliders')">BWP 120 - Order</button>
+            </div>
+            <div class="menu-card">
+                <h3>Truffle Fries</h3>
+                <p>Fries with truffle oil & parmesan</p>
+                <button onclick="orderItem('Truffle Fries')">BWP 75 - Order</button>
+            </div>
+            <div class="menu-card">
+                <h3>Grilled Beef Platter</h3>
+                <p>Served with pap & chakalaka</p>
+                <button onclick="orderItem('Grilled Beef Platter')">BWP 280 - Order</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="hookah">
+        <h2>Hookah</h2>
+        <div class="menu-cards"  style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px;">
+            <div class="menu-card">
+                <h3>Double Apple</h3>
+                <p>Classic apple flavour</p>
+                <button onclick="orderItem('Double Apple')">BWP 180 - Order</button>
+            </div>
+            <div class="menu-card">
+                <h3>Coconut Paradise</h3>
+                <p>Coconut & tropical mix</p>
+                <button onclick="orderItem('Coconut Paradise')">BWP 200 - Order</button>
+            </div>
+            <div class="menu-card">
+                <h3>VIP Package</h3>
+                <p>Premium hookah + host</p>
+                <button onclick="orderItem('VIP Package')">BWP 350 - Order</button>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <div class="cta-banner">
+        <h2>Want something special?</h2>
+        <p>Contact us for bottle service or customized packages</p>
+    </div>
+    <footer>
+       <div class="footer-container">
+          <div class="footer-box">
+             <h3>Coconut Lounge</h3>
+             <p>Francistown</p>
+             <p>Botswana</p>
+          </div>
+
+          <div class="footer-box">
+              <h3>Opening Hours</h3>
+              <p>Monday - Thursday: 5:00 PM - 12:00 AM<br> Friday - Saturday: 5:00 PM - 2:00 AM<br> Sunday: 4:00 PM - 11:00 PM</p>
+          </div>
+
+          <div class="footer-box">
+             <h3>Contact</h3>
+             <p>+267 240 0001</p>
+             <P>ftownlounge@gmail.com</P>
+          </div>
+
+           <div class="footer-box">
+              <h3>Follow</h3>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+           </div>
+                  
+           <div class="footer-bottom">
+              <p>&copy; 2026 Coconut Lounge Lifestyle. All rights reserved.</p>
+           </div>
+       </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
